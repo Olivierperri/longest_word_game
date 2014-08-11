@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'play#game', as:'game'
+  
   get '/score', to:'play#score', as:'score'
 
   # Example of regular route:

@@ -1,0 +1,9 @@
+<h3>A toi de jouer !</h3>
+
+<h2><%=@grid.join %><h2>
+
+<form action="/answer">
+    <label for="question">Ecris ton mot</label>
+    <input type="text" id="question" name="query" placeholder="le plus long ">
+    <input type="submit" value="Go!">
+</form>

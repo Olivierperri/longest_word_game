@@ -1,0 +1,9 @@
+<h1>Resultat</h1>
+<p> Votre mot: <%= @attempt %></p>
+<p> Time Taken to answer:<%= @result[:time] %>  seconds </p>
+<p> Translation: <%= @result[:translation] %> </p>
+<p> Your score: <%= @result[:score] %></p>
+<p> Message: <%= @result[:message] %></p>
+
+<%= link_to 'Rejoue', game_path %>
+

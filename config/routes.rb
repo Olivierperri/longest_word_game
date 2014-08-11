@@ -2,11 +2,9 @@ Rails.application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
-  get '/game', to: 'game#generate_grid'
-  get '/answer', to:'game#answer'
-
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root 'play#game', as:'game'
+  get '/score', to:'play#score', as:'score'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
